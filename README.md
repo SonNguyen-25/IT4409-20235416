@@ -2,6 +2,8 @@
 
 Website bài tập môn Công nghệ Web và Dịch vụ trực tuyến.
 
+Địa chỉ: https://nsonlonton.id.vn
+
 ## Công nghệ
 
 HTML5, CSS3, JavaScript thuần — không cần build, không phụ thuộc thư viện ngoài.
