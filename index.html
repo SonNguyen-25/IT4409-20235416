@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Công nghệ Web &amp; Dịch vụ trực tuyến</title>
+<meta name="description" content="Website môn học Công nghệ Web và Dịch vụ trực tuyến.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>
+  // Đặt theme trước khi render để tránh nháy màu.
+  (function () {
+    var saved = null;
+    try { saved = localStorage.getItem("theme"); } catch (e) {}
+    var light = saved ? saved === "light" : window.matchMedia("(prefers-color-scheme: light)").matches;
+    if (light) document.documentElement.dataset.theme = "light";
+  })();
+</script>
+</head>
+<body>
+
+<div class="aurora" aria-hidden="true">
+  <span class="blob blob-1"></span>
+  <span class="blob blob-2"></span>
+  <span class="blob blob-3"></span>
+</div>
+<canvas id="stars" aria-hidden="true"></canvas>
+
+<header class="nav">
+  <a class="brand" href="#">
+    <span class="brand-mark"></span>
+    <span>cnweb<span class="brand-dim">.site</span></span>
+  </a>
+  <nav class="nav-links">
+    <a href="#about">Giới thiệu</a>
+    <a href="#stack">Công nghệ</a>
+    <a href="#contact">Liên hệ</a>
+  </nav>
+  <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Đổi giao diện sáng/tối">
+    <span class="theme-icon"></span>
+  </button>
+</header>
+
+<main>
+  <section class="hero">
+    <p class="eyebrow reveal">Đang xây dựng</p>
+    <h1 class="reveal">
+      Website môn<br>
+      <span class="gradient-text">Công nghệ Web</span><br>
+      &amp; Dịch vụ trực tuyến
+    </h1>
+    <p class="lede reveal">
+      Trang tạm thời cho tên miền và hosting của assignment.
+      Nội dung chính thức sẽ được cập nhật trong thời gian tới —
+      <span id="typed" class="typed"></span><span class="caret">|</span>
+    </p>
+    <div class="cta-row reveal">
+      <a class="btn btn-primary" href="#about">Xem chi tiết</a>
+      <a class="btn btn-ghost" href="https://github.com" target="_blank" rel="noopener">Mã nguồn</a>
+    </div>
+    <div class="status reveal">
+      <span class="dot"></span> Deploy thành công · <span id="uptime">đang tính…</span>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <h2 class="reveal">Về dự án</h2>
+    <div class="cards">
+      <article class="card reveal">
+        <div class="card-icon">01</div>
+        <h3>Tên miền riêng</h3>
+        <p>Tên miền được đăng ký và trỏ về máy chủ triển khai, phục vụ yêu cầu thực hành của môn học.</p>
+      </article>
+      <article class="card reveal">
+        <div class="card-icon">02</div>
+        <h3>Hosting &amp; CI/CD</h3>
+        <p>Mã nguồn lưu trên GitHub, mỗi lần push sẽ tự động build và phát hành phiên bản mới.</p>
+      </article>
+      <article class="card reveal">
+        <div class="card-icon">03</div>
+        <h3>Giao diện đáp ứng</h3>
+        <p>Bố cục thích ứng mọi kích thước màn hình, hỗ trợ chế độ sáng và tối theo thiết lập hệ thống.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="stack">
+    <h2 class="reveal">Công nghệ sử dụng</h2>
+    <ul class="chips reveal">
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+      <li>Git</li>
+      <li>GitHub</li>
+      <li>Vercel</li>
+    </ul>
+  </section>
+
+  <section class="section contact" id="contact">
+    <h2 class="reveal">Liên hệ</h2>
+    <p class="reveal muted">Mọi trao đổi về nội dung trang xin gửi về địa chỉ bên dưới.</p>
+    <a class="mail reveal" href="mailto:sonlienbat@gmail.com">sonlienbat@gmail.com</a>
+  </section>
+</main>
+
+<footer class="footer">
+  <span>© <span id="year"></span> · Công nghệ Web &amp; Dịch vụ trực tuyến</span>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
