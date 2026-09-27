@@ -1,0 +1,61 @@
+DANH SÁCH LỖI TRONG FILE news_wrong.html (so với news.html)
+
+1. Sai DOCTYPE (dòng 1)
+Lỗi: <!DOCTYPE HTML5>
+Sửa đúng: <!DOCTYPE html>
+Giải thích: "HTML5" không phải giá trị DOCTYPE hợp lệ.
+
+2. Sai giá trị thuộc tính charset (dòng 5)
+Lỗi: <meta charset="UTF-88">
+Sửa đúng: <meta charset="UTF-8">
+Giải thích: "UTF-88" không phải bảng mã hợp lệ.
+
+3. Thiếu thẻ đóng </title> (dòng 6)
+Lỗi: <title>News - Blakletterpress Website Template
+Sửa đúng: <title>News - Blakletterpress Website Template</title>
+Giải thích: Thiếu thẻ đóng khiến thẻ <link> phía sau bị "nuốt" vào trong title.
+
+4. Sai tên thẻ <boby> (dòng 9)
+Lỗi: <boby>
+Sửa đúng: <body>
+Giải thích: Sai chính tả tên thẻ, không khớp với </body> ở cuối file (dòng 160).
+
+5. Thiếu thuộc tính alt (dòng 19)
+Lỗi: <img src="images/logo.png">
+Sửa đúng: <img src="images/logo.png" alt="LOGO">
+Giải thích: Thiếu thuộc tính alt cho hình ảnh.
+
+6. Thiếu dấu đóng thẻ ">" (dòng 24)
+Lỗi: <input type="submit" value="Search" class="btn"
+Sửa đúng: <input type="submit" value="Search" class="btn">
+Giải thích: Thẻ <input> không được đóng, làm hỏng cả </form> phía sau.
+
+7. Đóng thẻ sai cặp (dòng 27)
+Lỗi: </section>
+Sửa đúng: </div>
+Giải thích: Không hề có thẻ mở <section>, thẻ mở tương ứng là <div id="searchbar">.
+
+8. Trộn loại dấu nháy trong thuộc tính (dòng 33)
+Lỗi: <span class="time'>01-01-2012</span>
+Sửa đúng: <span class="time">01-01-2012</span>
+Giải thích: Mở dấu nháy kép ("), nhưng đóng bằng dấu nháy đơn (').
+
+9. Thẻ không hợp lệ <h7> (dòng 34)
+Lỗi: <h7>NEWS TITLE ONE</h7>
+Sửa đúng: <h3>NEWS TITLE ONE</h3>
+Giải thích: HTML chỉ có các thẻ tiêu đề từ h1 đến h6.
+
+10. Thiếu thẻ đóng </p> (dòng 43-45)
+Lỗi: Đoạn <p> trong <li> thứ 2 không có </p> trước khi qua thẻ <a>
+Sửa đúng: Thêm </p> sau đoạn văn bản, trước thẻ <a>
+Giải thích: Thẻ <p> bị bỏ ngỏ, không đóng đúng cách.
+
+11. Thiếu thẻ đóng </a> (dòng 53)
+Lỗi: <a href="news.html" class="more">Read more >>
+Sửa đúng: <a href="news.html" class="more">Read more >></a>
+Giải thích: Thẻ <a> trong <li> thứ 3 không được đóng.
+
+12. Đóng thẻ sai cặp (dòng 71)
+Lỗi: </ol>
+Sửa đúng: </ul>
+Giải thích: Thẻ mở tương ứng là <ul id="list"> (dòng 31), không phải <ol>.

@@ -1,0 +1,138 @@
+/* Bo sung cho register.html va media.html - khong sua style.css goc */
+
+/*------------------------------ FORM (register.html) ------------------------------*/
+.register-form fieldset {
+	border: 1px solid #e0d0a8;
+	border-radius: 4px;
+	margin: 0 0 24px;
+	padding: 16px 20px 20px;
+}
+.register-form legend {
+	padding: 0 8px;
+	color: #7e501c;
+	font-size: 15px;
+	font-weight: bold;
+}
+.form-row {
+	margin: 0 0 16px;
+}
+.form-row label,
+.form-row .group-label {
+	display: block;
+	color: #300302;
+	font-size: 13px;
+	font-weight: bold;
+	margin: 0 0 6px;
+}
+.form-row .hint {
+	color: #9a8b6d;
+	font-size: 12px;
+	font-weight: normal;
+}
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row input[type="password"],
+.form-row input[type="tel"],
+.form-row input[type="date"],
+.form-row input[type="number"],
+.form-row select,
+.form-row textarea {
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 360px;
+	border: 1px solid #cbb98f;
+	border-radius: 3px;
+	padding: 7px 8px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 13px;
+}
+.form-row textarea {
+	max-width: 100%;
+	min-height: 80px;
+	resize: vertical;
+}
+.radio-group label,
+.checkbox-group label,
+.checkbox-inline {
+	display: inline-block;
+	font-weight: normal;
+	margin: 0 18px 0 0;
+}
+.radio-group input,
+.checkbox-group input,
+.checkbox-inline input {
+	margin-right: 6px;
+}
+.form-actions {
+	margin-top: 6px;
+}
+.form-actions input[type="submit"],
+.form-actions input[type="reset"] {
+	border: 0;
+	border-radius: 3px;
+	color: #fff;
+	cursor: pointer;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 13px;
+	font-weight: bold;
+	padding: 9px 20px;
+	margin-right: 10px;
+}
+.form-actions input[type="submit"] {
+	background-color: #199209;
+}
+.form-actions input[type="submit"]:hover {
+	background-color: #0d6c02;
+}
+.form-actions input[type="reset"] {
+	background-color: #a2a2a1;
+}
+.form-actions input[type="reset"]:hover {
+	background-color: #838382;
+}
+
+/*------------------------------ MEDIA (media.html) ------------------------------*/
+#main article > header {
+	margin: 0 0 6px;
+}
+#main article .meta {
+	color: #9a8b6d;
+	font-size: 12px;
+	padding-bottom: 24px;
+	text-align: left;
+}
+#main figure {
+	margin: 0 0 30px;
+	text-align: center;
+}
+#main figure img,
+#main figure iframe,
+#main figure video {
+	max-width: 100%;
+	height: auto;
+	border: 1px solid #e0d3b3;
+	border-radius: 3px;
+}
+#main figcaption {
+	color: #9a8b6d;
+	font-size: 12px;
+	font-style: italic;
+	padding-top: 8px;
+}
+#main video,
+#main iframe.map {
+	display: block;
+	width: 100%;
+	margin: 0 0 8px;
+}
+#main audio {
+	width: 100%;
+	margin: 0 0 8px;
+}
+#main article section {
+	margin: 0 0 30px;
+}
+#main article footer {
+	border-top: 1px solid #efe3c4;
+	padding-top: 16px;
+}
