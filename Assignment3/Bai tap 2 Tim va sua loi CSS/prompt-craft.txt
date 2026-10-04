@@ -1,0 +1,16 @@
+Bài tập 2: Prompt (cấu trúc CRAFT) dùng AI để tìm và sửa lỗi CSS
+
+Context:
+Tôi có một trang HTML tĩnh "trang.html" và file CSS "style-loi.css" (đính kèm cả hai) cho trang khuyến mãi thiệp Tết của một xưởng in letterpress. Trang dùng box model và position để dựng layout: menu sticky trên cùng, một khối hero toàn khung với tiêu đề canh giữa, ba thẻ sản phẩm xếp ngang có nhãn giảm giá ở góc mỗi thẻ, và một nút "lên đầu trang" nổi cố định. CSS này trông gần như đúng khi nhìn lướt qua, nhưng có một vài lỗi tinh vi về box model/position. Quan trọng: trong file cũng có vài đoạn trông "thừa hoặc lạ" (ví dụ transform scale trên ảnh nền hero, overflow-x: hidden ở khối bọc ngoài, margin âm trên khối sản phẩm để tạo hiệu ứng chồng mép lên hero) nhưng đó là chủ đích thiết kế và đang hoạt động đúng — không phải lỗi.
+
+Role:
+Hãy đóng vai một lập trình viên front-end có kinh nghiệm debug CSS bằng DevTools, cẩn thận và không sửa những gì không hỏng.
+
+Action:
+Phân tích style-loi.css đối chiếu với yêu cầu hiển thị sau: (1) menu trên cùng dính lại khi cuộn và luôn nằm trên ảnh hero; (2) ảnh hero phủ kín khung, tiêu đề nằm chính giữa ảnh; (3) ba thẻ sản phẩm luôn xếp một hàng ngang ở độ rộng khung máy tính, mỗi thẻ hiển thị đầy đủ nhãn giảm giá ở góc trên bên phải của chính thẻ đó, không bị phần tử khác trong thẻ che mất; (4) nút "lên đầu trang" nổi cố định ở góc dưới bên phải màn hình. Hãy chỉ ra chính xác (các) khai báo CSS gây lỗi, giải thích ngắn gọn cơ chế box model/position khiến nó sai, và đề xuất bản sửa tối thiểu. Không được thay đổi HTML, không được sửa hoặc xoá bất kỳ đoạn CSS nào đang hoạt động đúng, kể cả khi nó trông bất thường — nếu nghi ngờ một đoạn code, hãy giải thích vì sao nó cần thiết thay vì xoá nó.
+
+Format:
+Trả lời theo hai phần: (1) danh sách các lỗi tìm được, mỗi lỗi gồm — selector/CSS liên quan, triệu chứng quan sát được, nguyên nhân, bản sửa; (2) khối code CSS hoàn chỉnh của style-loi.css sau khi sửa, giữ nguyên toàn bộ phần không liên quan đến lỗi.
+
+Target audience:
+Kết quả dùng để nộp bài tập môn Công nghệ Web, người đọc là giảng viên chấm bài — phần giải thích cần ngắn gọn, đúng thuật ngữ CSS (box model, stacking context/z-index, flex-basis), không lan man.

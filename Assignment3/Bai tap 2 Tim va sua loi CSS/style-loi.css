@@ -144,7 +144,7 @@ a {
 	flex: 0 0 calc((100% - 48px) / 3);
 	min-height: 320px;
 	position: relative;
-	box-sizing: content-box;
+	box-sizing: border-box;
 	background: #fff;
 	border: 1px solid #e0d8c8;
 	border-radius: 8px;
@@ -170,8 +170,6 @@ a {
 	height: 180px;
 	object-fit: cover;
 	border-radius: 4px;
-	position: relative;
-	z-index: 2;
 }
 
 .card-body h3 {
