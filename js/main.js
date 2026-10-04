@@ -15,7 +15,7 @@
   var phrases = [
     "cảm ơn bạn đã ghé thăm.",
     "hệ thống đang hoạt động ổn định.",
-    "nội dung sẽ sớm được bổ sung."
+    "bài mới sẽ được cập nhật liên tục."
   ];
   var target = document.getElementById("typed");
   var phraseIndex = 0;

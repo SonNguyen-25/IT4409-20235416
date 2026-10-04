@@ -34,6 +34,7 @@
     <span>nsonlonton<span class="brand-dim">.id.vn</span></span>
   </a>
   <nav class="nav-links">
+    <a href="#assignments">Bài tập</a>
     <a href="#about">Giới thiệu</a>
     <a href="#stack">Công nghệ</a>
     <a href="#contact">Liên hệ</a>
@@ -45,24 +46,37 @@
 
 <main>
   <section class="hero">
-    <p class="eyebrow reveal">Đang xây dựng</p>
+    <p class="eyebrow reveal">IT4409 · 20235416</p>
     <h1 class="reveal">
       Website môn<br>
       <span class="gradient-text">Công nghệ Web</span><br>
       &amp; Dịch vụ trực tuyến
     </h1>
     <p class="lede reveal">
-      Trang tạm thời cho tên miền và hosting của assignment.
-      Nội dung chính thức sẽ được cập nhật trong thời gian tới —
+      Nơi tổng hợp các bài tập đã triển khai của môn học,
+      mỗi bài chỉ cách một cú bấm —
       <span id="typed" class="typed"></span><span class="caret">|</span>
     </p>
     <div class="cta-row reveal">
-      <a class="btn btn-primary" href="#about">Xem chi tiết</a>
+      <a class="btn btn-primary" href="#assignments">Xem bài tập</a>
       <a class="btn btn-ghost" href="https://github.com/SonNguyen-25/IT4409-20235416" target="_blank" rel="noopener">Mã nguồn</a>
     </div>
     <div class="status reveal">
       <span class="dot"></span> Deploy thành công · <span id="uptime">đang tính…</span>
     </div>
+  </section>
+
+  <section class="section" id="assignments">
+    <div class="section-head reveal">
+      <h2>Bài tập</h2>
+      <p class="muted">Mới nhất ở trên cùng. Bấm vào từng trang để mở bản đã triển khai.</p>
+    </div>
+    <div id="assignment-list" class="assignment-list"></div>
+    <noscript>
+      <p class="muted">Bật JavaScript để xem danh sách bài tập, hoặc truy cập
+        <a href="baitapHTML/index.html">baitapHTML</a> và
+        <a href="Assignment3/Bai%20tap%201%20Tim%20va%20sua%20loi%20CSS/trang.html">Assignment3</a>.</p>
+    </noscript>
   </section>
 
   <section class="section" id="about">
@@ -109,6 +123,7 @@
   <span>© <span id="year"></span> · Công nghệ Web &amp; Dịch vụ trực tuyến</span>
 </footer>
 
+<script src="js/assignments.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
