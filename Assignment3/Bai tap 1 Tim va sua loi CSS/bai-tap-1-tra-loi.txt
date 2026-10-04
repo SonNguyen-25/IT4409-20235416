@@ -1,0 +1,9 @@
+Bài tập 1: Nội dung lỗi CSS phát hiện, triệu chứng nhìn thấy và nguyên nhân
+
+1. Thanh menu không dính khi cuộn: cuộn trang thì thanh menu trôi theo, không dính lại trên đầu. Do .site-header có position: sticky nhưng thiếu toạ độ top, mà sticky chỉ kích hoạt khi có ít nhất một thuộc tính offset (top/bottom/...), nên trình duyệt coi như position: static.
+
+2. Tiêu đề không nằm giữa ảnh hero: tiêu đề và đoạn mô tả không nằm giữa ảnh hero mà bị lệch ra ngoài, xuống dưới hoặc lệch góc trang. Do .hero-overlay dùng position: absolute với top:50%; left:50% để tự canh giữa, nhưng phần tử cha .hero không được định vị (position mặc định static) nên nó lấy mốc theo khối chứa xa hơn (body/viewport) thay vì theo khung ảnh hero.
+
+3. Nhãn "-20%" và ảnh sản phẩm bị vỡ trong thẻ: nhãn "-20%" không nằm gọn ở góc từng thẻ mà dồn về một chỗ hoặc lệch ra ngoài danh sách thẻ; ảnh sản phẩm tràn ra khỏi khung thẻ cao 300px, chữ bị đẩy lệch. Do .badge dùng position: absolute nên cần .card (cha trực tiếp) làm mốc định vị, nhưng .card thiếu position: relative nên badge định vị theo .card-list; ngoài ra .card bị ép height: 300px cố định trong khi img không có height/object-fit nên giữ nguyên kích thước gốc và tràn ra ngoài.
+
+4. Nút "lên đầu trang" nằm sai góc màn hình: nút "↑" nổi cố định ở góc trên bên phải màn hình, trong khi yêu cầu là góc dưới bên phải. Do .back-to-top khai top: 24px; right: 24px thay vì bottom: 24px; right: 24px cho position: fixed.
