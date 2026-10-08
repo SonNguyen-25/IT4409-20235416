@@ -12,7 +12,8 @@ window.ASSIGNMENTS = [
     tags: ["Box model", "Position", "z-index"],
     links: [
       { label: "Bài 1 — Sửa lỗi bố cục vỡ", href: "Assignment3/Bai%20tap%201%20Tim%20va%20sua%20loi%20CSS/trang.html" },
-      { label: "Bài 2 — Sửa lỗi tinh vi (dùng AI)", href: "Assignment3/Bai%20tap%202%20Tim%20va%20sua%20loi%20CSS/trang.html" }
+      { label: "Bài 2 — Sửa lỗi tinh vi (dùng AI)", href: "Assignment3/Bai%20tap%202%20Tim%20va%20sua%20loi%20CSS/trang.html" },
+      { label: "Bài 3 — Responsive 3/2/1 cột", href: "Assignment3/Bai%20tap%203%20x%C3%A2y%20d%E1%BB%B1ng%20css%20responsive/responsive-Bai%20tap%203.html" }
     ]
   },
   {
