@@ -3,3 +3,8 @@ node_modules/
 .DS_Store
 Thumbs.db
 *.log
+
+# File tra loi / ghi chu ca nhan, khong dua len repo
+*.txt
+*.doc
+*.docx
