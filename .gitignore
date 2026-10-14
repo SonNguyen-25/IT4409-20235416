@@ -8,3 +8,6 @@ Thumbs.db
 *.txt
 *.doc
 *.docx
+
+# Dau ra cua graphify
+graphify-out/
