@@ -14,7 +14,9 @@ window.ASSIGNMENTS = [
       { label: "Bài 1a — Phiếu báo giá", href: "Assignment4-JS/Bai%20tap%201%20-%20JS%20phieu%20bao%20gia%20va%20xac%20nhan%20don%20in/index.html" },
       { label: "Bài 1b — Phiếu xác nhận đơn in", href: "Assignment4-JS/Bai%20tap%201%20-%20JS%20phieu%20bao%20gia%20va%20xac%20nhan%20don%20in/about.html" },
       { label: "Bài 2a — Tin tức từ JSON", href: "Assignment4-JS/Bai%20tap%202%20-%20JS%20tin%20tuc%20va%20gio%20hang/news.html" },
-      { label: "Bài 2b — Giỏ hàng", href: "Assignment4-JS/Bai%20tap%202%20-%20JS%20tin%20tuc%20va%20gio%20hang/index.html" }
+      { label: "Bài 2b — Giỏ hàng", href: "Assignment4-JS/Bai%20tap%202%20-%20JS%20tin%20tuc%20va%20gio%20hang/index.html" },
+      { label: "Bài 3a — Thư viện ảnh", href: "Assignment4-JS/Bai%20tap%203%20-%20JS%20thu%20vien%20anh%20va%20tin%20nhanh/index.html" },
+      { label: "Bài 3b — Lọc & đăng tin nhanh", href: "Assignment4-JS/Bai%20tap%203%20-%20JS%20thu%20vien%20anh%20va%20tin%20nhanh/news.html" }
     ]
   },
   {
