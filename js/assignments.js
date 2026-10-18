@@ -8,11 +8,13 @@ window.ASSIGNMENTS = [
     code: "04",
     title: "JavaScript cơ bản",
     date: "2026-10-14",
-    summary: "Lập phiếu báo giá và phiếu xác nhận đơn in bằng JavaScript: kiểu dữ liệu, scope, hoisting, tham chiếu, template literal.",
-    tags: ["JavaScript", "Scope", "Template literal"],
+    summary: "Phiếu báo giá và phiếu xác nhận đơn in, trang tin tức đọc từ JSON và giỏ hàng viết bằng class: scope, tham chiếu, mảng, JSON.",
+    tags: ["JavaScript", "Array", "JSON", "Class"],
     links: [
       { label: "Bài 1a — Phiếu báo giá", href: "Assignment4-JS/Bai%20tap%201%20-%20JS%20phieu%20bao%20gia%20va%20xac%20nhan%20don%20in/index.html" },
-      { label: "Bài 1b — Phiếu xác nhận đơn in", href: "Assignment4-JS/Bai%20tap%201%20-%20JS%20phieu%20bao%20gia%20va%20xac%20nhan%20don%20in/about.html" }
+      { label: "Bài 1b — Phiếu xác nhận đơn in", href: "Assignment4-JS/Bai%20tap%201%20-%20JS%20phieu%20bao%20gia%20va%20xac%20nhan%20don%20in/about.html" },
+      { label: "Bài 2a — Tin tức từ JSON", href: "Assignment4-JS/Bai%20tap%202%20-%20JS%20tin%20tuc%20va%20gio%20hang/news.html" },
+      { label: "Bài 2b — Giỏ hàng", href: "Assignment4-JS/Bai%20tap%202%20-%20JS%20tin%20tuc%20va%20gio%20hang/index.html" }
     ]
   },
   {
